@@ -170,8 +170,21 @@ h3 {
   color: var(--muted);
 }
 
-.grid.compact .card {
-  text-align: center;
+.criteriaList {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.criteriaList li {
+  padding: 0 0 12px;
+  border-bottom: 2px solid var(--line);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 .timeline {
@@ -225,6 +238,7 @@ h3 {
   .grid.two,
   .grid.three,
   .grid.four,
+  .criteriaList,
   .timelineItem {
     grid-template-columns: 1fr;
   }

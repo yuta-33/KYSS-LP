@@ -1,10 +1,10 @@
 const formUrl = "https://forms.gle/replace-me";
 
 const schedule = [
-  ["9/4", "事前登録締切"],
+  ["9/4", "エントリー締切"],
   ["9/11", "一次通過者発表"],
   ["9/26", "ブラッシュアップDAY"],
-  ["10/17 または 10/24", "FINAL PITCH"]
+  ["10/17", "FINAL PITCH"]
 ];
 
 const faqItems = [
@@ -18,7 +18,7 @@ const faqItems = [
   },
   {
     q: "参加費はかかりますか？",
-    a: "現時点では無料開催を想定しています。正式要項で最終案内します。"
+    a: "現時点では無料開催を想定しています。"
   }
 ];
 
@@ -32,20 +32,20 @@ export default function Home() {
           <p className="lead">
             プレゼンで終わらない挑戦を、高知から。
             <br />
-            KYSS 2026 は、若者のアイデアを実装と継続につなげる伴走型サミットです。
+            KYSS 2026 は、若者のアイデアを実装と継続につなげる伴走型のイベントです。
           </p>
 
           <div className="summary">
             <div>
               <span>開催候補日</span>
-              <strong>2026年10月17日 または 10月24日</strong>
+              <strong>2026年10月17日予定</strong>
             </div>
             <div>
               <span>会場</span>
               <strong>オーテピア予定</strong>
             </div>
             <div>
-              <span>事前登録締切</span>
+              <span>エントリー締切</span>
               <strong>2026年9月4日</strong>
             </div>
           </div>
@@ -110,12 +110,12 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <h2>審査・評価のポイント</h2>
-          <div className="grid four compact">
-            <article className="card"><h3>熱量</h3></article>
-            <article className="card"><h3>独自性・着眼点</h3></article>
-            <article className="card"><h3>課題設定</h3></article>
-            <article className="card"><h3>継続性・実装への意思</h3></article>
-          </div>
+          <ul className="criteriaList">
+            <li>熱量</li>
+            <li>独自性・着眼点</li>
+            <li>課題設定</li>
+            <li>継続性・実装への意思</li>
+          </ul>
         </div>
       </section>
 
