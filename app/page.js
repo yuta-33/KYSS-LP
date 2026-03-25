@@ -1,7 +1,7 @@
 const formUrl = "https://forms.gle/replace-me";
 
 const schedule = [
-  ["9/4", "エントリー締切"],
+  ["9/4", "事前登録締切"],
   ["9/11", "一次通過者発表"],
   ["9/26", "ブラッシュアップDAY"],
   ["10/17 または 10/24", "FINAL PITCH"]
@@ -45,7 +45,7 @@ export default function Home() {
               <strong>オーテピア予定</strong>
             </div>
             <div>
-              <span>エントリー締切</span>
+              <span>事前登録締切</span>
               <strong>2026年9月4日</strong>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              応募はこちら
+              事前登録はこちら
             </a>
           </div>
 
@@ -170,9 +170,10 @@ export default function Home() {
 
       <section className="section">
         <div className="container ctaBlock">
-          <h2>応募</h2>
+          <h2>事前登録</h2>
           <p>
-            応募導線は Googleフォーム で対応します。URL確定後、下のリンクを差し替えて公開します。
+            現時点では参加予定人数の把握を目的とした事前登録のみを受け付けます。
+            GoogleフォームのURL確定後、下のリンクを差し替えて公開します。
           </p>
           <a
             className="button primary"
@@ -180,7 +181,7 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            Googleフォームへ
+            事前登録フォームへ
           </a>
         </div>
       </section>
