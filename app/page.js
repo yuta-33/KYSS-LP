@@ -4,7 +4,7 @@ const schedule = [
   ["9/4", "エントリー締切"],
   ["9/11", "一次通過者発表"],
   ["9/26", "ブラッシュアップDAY"],
-  ["10/17", "FINAL PITCH"]
+  ["10/24", "FINAL PITCH"]
 ];
 
 const faqItems = [
@@ -38,7 +38,7 @@ export default function Home() {
           <div className="summary">
             <div>
               <span>開催候補日</span>
-              <strong>2026年10月17日予定</strong>
+              <strong>2026年10月24日予定</strong>
             </div>
             <div>
               <span>会場</span>
