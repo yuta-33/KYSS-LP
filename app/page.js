@@ -112,6 +112,8 @@ export default function Home() {
           </div>
           <p className="subtext">個人・チームのどちらでも参加可能です。</p>
         </div>
+      </section>
+      <section className="section">
         <div className="container">
           <h2>賞金</h2>
           <div className="grid two">
@@ -128,7 +130,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section">
+
+      <section className="section alt">
         <div className="container">
           <h2>審査・評価のポイント</h2>
           <ul className="criteriaList">
@@ -140,7 +143,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section alt">
+      <section className="section">
         <div className="container">
           <h2>伴走支援</h2>
           <div className="grid three">
@@ -160,7 +163,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section alt">
         <div className="container">
           <h2>スケジュール</h2>
           <div className="timeline">
@@ -175,7 +178,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section alt">
+      <section className="section">
         <div className="container">
           <h2>FAQ</h2>
           <div className="faq">
@@ -189,7 +192,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section alt">
         <div className="container ctaBlock">
           <h2>事前登録</h2>
           <p>
