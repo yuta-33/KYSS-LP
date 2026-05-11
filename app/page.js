@@ -180,7 +180,6 @@ export default function Home() {
           <h2>事前登録</h2>
           <p>
             現時点では参加予定人数の把握を目的とした事前登録のみを受け付けます。
-            GoogleフォームのURL確定後、下のリンクを差し替えて公開します。
           </p>
           <a
             className="button primary"
