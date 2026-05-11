@@ -1,4 +1,4 @@
-const formUrl = "https://forms.gle/replace-me";
+const formUrl = "https://forms.gle/Vf6ZCtHwiahEpxGg9";
 
 const schedule = [
   ["9/4", "エントリー締切"],
@@ -62,6 +62,13 @@ export default function Home() {
             >
               事前登録はこちら
             </a>
+          </div>
+
+          <div className="heroMedia">
+            <img
+              src="/header-photo.jpg"
+              alt="KYSS関連イベントの様子"
+            />
           </div>
 
           <p className="note">

@@ -101,6 +101,20 @@ h3 {
   margin-top: 28px;
 }
 
+.heroMedia {
+  margin-top: 28px;
+}
+
+.heroMedia img {
+  display: block;
+  width: 100%;
+  height: min(42vw, 520px);
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
