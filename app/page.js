@@ -112,6 +112,20 @@ export default function Home() {
           </div>
           <p className="subtext">個人・チームのどちらでも参加可能です。</p>
         </div>
+        <div>
+          <h2>賞金</h2>
+          <div className="grid two">
+            <p>総額50万円を予定しています。</p>
+            <article className="card">
+              <h3>最優秀賞</h3>
+              <p>全体で最も優れたアイデア・挑戦に賞金30万円贈呈予定です。</p>
+            </article>
+            <article className="card">
+              <h3>部門賞</h3>
+              <p>各部門で最も優れたアイデア・挑戦に賞金10万円贈呈予定です。</p>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section className="section">
