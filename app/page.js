@@ -1,10 +1,13 @@
-const formUrl = "https://forms.gle/Vf6ZCtHwiahEpxGg9";
+const formUrl =
+  "https://docs.google.com/forms/d/e/1FAIpQLSdaStvXF1OA85h5eEz6yxdydvC5sYsN3MFI6ee2te8cNZ8K8w/viewform";
 
 const schedule = [
-  ["9/4", "エントリー締切"],
-  ["9/11", "一次通過者発表"],
-  ["9/26", "ブラッシュアップDAY"],
-  ["10/24", "FINAL PITCH"]
+  ["9/4（金）", "一次審査（書類選考）エントリー締切"],
+  ["9/5（土）〜9/10（木）", "一次審査 実施期間"],
+  ["9/11（金）", "一次審査 通過者発表（事務局より連絡）"],
+  ["9/26（土）", "ブラッシュアップDAY＆説明会"],
+  ["9/26（土）〜10/17（土）", "二次審査に向けたメンタリング期間"],
+  ["10/24（土）", "最終審査会（FINAL PITCH）"]
 ];
 
 const faqItems = [
@@ -18,7 +21,11 @@ const faqItems = [
   },
   {
     q: "参加費はかかりますか？",
-    a: "現時点では無料開催を想定しています。"
+    a: "参加費は無料です。"
+  },
+  {
+    q: "エントリーにはGoogleアカウントが必要ですか？",
+    a: "PDF資料のアップロードが必要なため、Googleアカウントでの送信が必要です。"
   }
 ];
 
@@ -32,13 +39,13 @@ export default function Home() {
           <p className="lead">
             プレゼンで終わらない挑戦を、高知から。
             <br />
-            KYSS 2026 は、若者のアイデアを実装と継続につなげる伴走型のイベントです。
+            KYSS 2026 は、若者のアイデアや事業を実装と継続につなげる伴走型のビジネスコンテストです。
           </p>
 
           <div className="summary">
             <div>
-              <span>開催候補日</span>
-              <strong>2026年10月24日予定</strong>
+              <span>最終審査会</span>
+              <strong>2026年10月24日（土）</strong>
             </div>
             <div>
               <span>会場</span>
@@ -60,7 +67,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              事前登録はこちら
+              エントリーはこちら
             </a>
           </div>
 
@@ -72,7 +79,7 @@ export default function Home() {
           </div>
 
           <p className="note">
-            本ページは本告知前のつなぎ用LPです。詳細情報は今後更新予定です。
+            会場変更など重要な連絡はメールで行います。必ずご自身または保護者が確認できるメールアドレスでエントリーしてください。
           </p>
         </div>
       </section>
@@ -87,7 +94,7 @@ export default function Home() {
             </article>
             <article className="card">
               <h3>伴走型サミット</h3>
-              <p>通過者にはブラッシュアップやメンタリングを通じた支援を想定しています。</p>
+              <p>通過者にはブラッシュアップやメンタリングを通じた支援を行います。</p>
             </article>
             <article className="card">
               <h3>次の一歩へつなげる</h3>
@@ -114,19 +121,19 @@ export default function Home() {
         </div>
       </section>
       <section className="section">
-        <div className="container">
+        <div className="container prizeSection">
           <h2>賞金</h2>
-          <div className="grid two">
-            <p>総額50万円を予定しています。</p>
-            <article className="card">
+          <div className="prizeList">
+            <article className="prizeItem">
               <h3>最優秀賞</h3>
               <p>全体で最も優れたアイデア・挑戦に賞金30万円贈呈予定です。</p>
             </article>
-            <article className="card">
+            <article className="prizeItem">
               <h3>部門賞</h3>
               <p>各部門で優れたアイデア・挑戦に賞金10万円贈呈予定です。</p>
             </article>
           </div>
+          <p className="sectionLead">総額50万円を予定しています。</p>
         </div>
       </section>
 
@@ -135,10 +142,11 @@ export default function Home() {
         <div className="container">
           <h2>審査・評価のポイント</h2>
           <ul className="criteriaList">
-            <li>熱量</li>
-            <li>独自性・着眼点</li>
-            <li>課題設定</li>
-            <li>継続性・実装への意思</li>
+            <li>熱意・原体験</li>
+            <li>新規性・独自性</li>
+            <li>課題解決性</li>
+            <li>実装・継続意欲</li>
+            <li>市場性・将来性</li>
           </ul>
         </div>
       </section>
@@ -149,11 +157,11 @@ export default function Home() {
           <div className="grid three">
             <article className="card">
               <h3>ブラッシュアップDAY</h3>
-              <p>通過後に、伝え方やアイデアの整理を行う機会を用意します。</p>
+              <p>通過後に、説明会と審査員紹介を含む対面でのブラッシュアップ機会を用意します。</p>
             </article>
             <article className="card">
               <h3>個別メンタリング</h3>
-              <p>必要に応じて、大人の実務家との壁打ちを想定しています。</p>
+              <p>二次審査に向けて、実現性や継続性を高める個別伴走支援を行います。</p>
             </article>
             <article className="card">
               <h3>次の挑戦機会へ</h3>
@@ -174,7 +182,27 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <p className="subtext">日程は現時点の仮情報であり、正式決定後に更新します。</p>
+          <p className="subtext">会場はオーテピアを予定しています。変更がある場合はメールにてご連絡します。</p>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <h2>エントリー資料</h2>
+          <div className="grid two">
+            <article className="card">
+              <h3>アイデア内容資料 / 事業内容資料（PDF）</h3>
+              <p>
+                ピッチ用スライドに収まりきらない内容を補足する資料です。審査項目に沿って、原体験、課題、ターゲット、独自性、社会性、市場性、実現性、継続性などを記載してください。
+              </p>
+            </article>
+            <article className="card">
+              <h3>ピッチ用スライド（PDF）</h3>
+              <p>
+                発表を想定したスライド資料をPDFで提出してください。アイデア内容資料 / 事業内容資料と同じPDFでも構いません。
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -194,9 +222,9 @@ export default function Home() {
 
       <section className="section alt">
         <div className="container ctaBlock">
-          <h2>事前登録</h2>
+          <h2>エントリー</h2>
           <p>
-            現時点では参加予定人数の把握を目的とした事前登録のみを受け付けます。
+            エントリーにはPDF資料のアップロードが必要です。会場変更や審査結果などの重要な連絡はメールで行います。
           </p>
           <a
             className="button primary"
@@ -204,7 +232,7 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            事前登録フォームへ
+            エントリーフォームへ
           </a>
         </div>
       </section>
